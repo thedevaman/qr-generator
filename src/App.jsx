@@ -32,7 +32,7 @@ const App = () => {
 
   const generateQr = (values) =>{
     
-    values.background_color = values.background_color || "white"
+    values.bgcolor = values.bgcolor || "white"
     values.color = values.color || "black"
     values.icon = icon
     SetQr((prev)=>({
@@ -99,7 +99,7 @@ const App = () => {
 
            <Form.Item 
           label="BG Color"
-          name="background_color"
+          name="bgcolor"
           >
             <Input 
             size="large"
