@@ -35,11 +35,21 @@ const App = () => {
     values.bgcolor = values.bgcolor || "white"
     values.color = values.color || "black"
     values.icon = icon
-    SetQr((prev)=>({
-      ...prev,
-      ...values
+    // SetQr((prev)=>({
+    //   ...prev,
+    //   ...values
 
-    }))
+    // }))
+    
+    const newQr = {
+    value:values.url,
+    icon:icon,
+    bgcolor:values.bgcolor,
+    color:values.color
+    }
+
+    SetQr(newQr)
+
     SetOpen(false)
   }
 
